@@ -17,7 +17,8 @@ Finally, the model is evaluated with the testing set. <br>
 The code is organized into six main functions: <br>
 
 ### 1. Data_set(filename, input_features, output_features) 
-This function extracts input and output data from your dataset. You need to provide the filename (the name of the file containing the data), the input_features (the names of the columns to extract as input), and the output_features (the names of the columns to extract as output). The output of this function is converted into tensors, allowing users to utilize the entire dataset in the neural network without splitting. <br>
+This function extracts input and output data from your dataset. You need to provide the filename (the name of the file containing the data), the input_features and output_features (Array containing strings of names of the columns to extract as input or output). The extracted data is then converted into tensors to be used in the neural network. This function returns two tensors of the input and output.
+<br> Example: input_tensor, output_tensor = Data_set(filename, ['fixed acidity',....], ['quality'])
 
 ### 2. Data_set_split(input_tensor, output_tensor, test_size=0.2) 
 This function splits the data into a training set and a testing set. You need to pass the input and output tensors obtained from the Data_set function. The default test_size is set to 0.2, meaning that 20% of the data will be used for testing and the remaining 80% for training. However, users can specify a different value to adjust the splitting percentage. <br>
