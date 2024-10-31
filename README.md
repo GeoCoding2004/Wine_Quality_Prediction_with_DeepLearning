@@ -1,4 +1,7 @@
 # Wine Quality Prediction with Deep Learning 
+<br>
+
+## General Overview
 The dataset used in this project contains various parameters that influence wine quality.<br>
 We are predicting wine quality based on 11 features, which will serve as inputs to our neural network.<br>
 The input features are fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulfates, and alcohol. <br>
