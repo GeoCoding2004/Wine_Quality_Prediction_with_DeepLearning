@@ -1,13 +1,9 @@
-# Wine_Quality_Prediction_with_DeepLearning
-
- The dataset used in this problem showcases different parameters that dictate the quality of wine.
- We are predicting the wine quality based on 11 features. Those features will be the input to our neural network.
- Those inputs are: fixed acidity,	volatile acidity, citric acid,	residual sugar,	chlorides,	free sulfur dioxide,	total sulfur dioxide,	density,	pH, sulfates,	alcohol
- On the other side of the neural network is the quality of the wine, which is a number from 1 to 10 (Although our dataset only contains labeled data from 4 up to 8)
- link for dataset: https://www.kaggle.com/datasets/yasserh/wine-quality-dataset
- 
 # Wine Quality Prediction with Deep Learning 
-The dataset used in this project contains various parameters that influence wine quality. We are predicting wine quality based on 11 features, which will serve as inputs to our neural network. The input features are: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulfates, and alcohol. The output of the neural network will be the quality of the wine, represented by a number from 1 to 10 (though our dataset only includes labeled data from 4 to 8). You can find the dataset at the following link: https://www.kaggle.com/datasets/yasserh/wine-quality-dataset
+The dataset used in this project contains various parameters that influence wine quality. 
+We are predicting wine quality based on 11 features, which will serve as inputs to our neural network. 
+The input features are: fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulfates, and alcohol. 
+The output of the neural network will be the quality of the wine, represented by a number from 4 to 8 in our dataset. 
+You can find the dataset at the following link: https://www.kaggle.com/datasets/yasserh/wine-quality-dataset
 
 
 
