@@ -87,7 +87,7 @@ from sklearn.model_selection import train_test_split
         # Update weights
         optimizer.step()
         
-        if epoch % 100 == 0:
+        if epoch == epochs:
             print(f"Epoch {epoch}/{epochs}, Training Loss: {loss.item()}")
 
 
