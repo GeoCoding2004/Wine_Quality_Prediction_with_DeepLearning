@@ -42,7 +42,12 @@ Example: Training the model using stochastic gradient descent, 1000 epochs, and 
 ### 6. Test_loss(model, input_testing, output_testing, criterion) 
 This function calculates the error on the test data to check if the model prediction is accurate or not. To use this function, you need to pass your model along with the test input, output data, and criterion. The function will return the calculated loss.
 Example: Testing the model and getting the 'testloss'
-<pre> testloss = Test_loss(model,input_testing,output_testing,nn.MSELoss()) </pre>
+<pre> testloss = Test_loss(model,input_testing,output_testing,nn.MSELoss()) </pre> <br>
+
+### 7. Prediction(model, input_testing)
+This function, given a tensor containing all the input data, will provide the predicted output using the model.
+<pre> Example: x = torch.tensor([8.3, 0.655,0.12,2.3,0.083,15,113,0.9966,3.17,0.66,9.8]) // input tensor <br>
+               pred = Prediction(model, x) </pre> <br>
 
 
 
