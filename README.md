@@ -36,11 +36,13 @@ Example: The neural network has 10 inputs, 2 hidden layers of 6 and 3 neurons re
 
 ### 5. Train_model(train_input, train_output, optimizer_type, model, epochs, learning_rate) 
 This function trains the model on the training input. It requires the training input and output obtained from the splitting function as arguments. Additionally, the user must provide the optimizer type, the model (created using the Create_model function), the number of epochs, and the learning rate. <br>
-Example: Training the model using stochastic gradient descent, 1000 epochs, and a learning rate or 0.001.
+Example: Training the model using stochastic gradient descent, 1000 epochs, and a learning rate of 0.001.
 <pre> train_model(input_training, output_training, optim.SGD, model, 1000, 0.001) </pre>
 
 ### 6. Test_loss(model, input_testing, output_testing, criterion) 
-This function calculates the error on the test data. To use it, you need to pass your model along with the test input and output data. The function will return the calculated loss.
+This function calculates the error on the test data to check if the model prediction is accurate or not. To use this function, you need to pass your model along with the test input, output data, and criterion. The function will return the calculated loss.
+Example: Testing the model and getting the 'testloss'
+<pre> testloss = Test_loss(model,input_testing,output_testing,nn.MSELoss()) </pre>
 
 
 
