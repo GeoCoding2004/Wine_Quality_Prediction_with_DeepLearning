@@ -47,7 +47,7 @@ Example: Testing the model and getting the 'testloss'
 ### 7. Prediction(model, input_testing)
 This function, given a tensor containing all the input data, will provide the predicted output using the model.
 <pre> Example: x = torch.tensor([8.3, 0.655,0.12,2.3,0.083,15,113,0.9966,3.17,0.66,9.8]) // input tensor <br>
-               pred = Prediction(model, x) </pre> <br>
+ output_prediction = Prediction(model, x) </pre> <br>
 
 
 
