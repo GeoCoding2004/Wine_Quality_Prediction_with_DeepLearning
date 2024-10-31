@@ -24,13 +24,15 @@ Example: If the user wants to extract from the data the 'fixed acidity' as input
 ### 2. Data_set_split(input_tensor, output_tensor, test_size=0.2) 
 This function splits the data into a training set and a testing set. You need to pass the input and output tensors obtained from the Data_set() function. The default test_size is set to 0.2 (20% of the data will be used for testing and the remaining 80% for training). However, users can specify a different value to adjust the splitting percentage. <br>
 Example: Using the input_tensor and output_tensor from Data_set(), one can write:
-<pre> input_training, output_training, input_testing, output_testing = Data_set_split(input_tensor, output_tensor) </pre>
+<pre> input_training, output_training, input_testing, output_testing = Data_set_split(input_tensor, output_tensor) </pre> <br>
 
 ### 3. Class NeuralNet(nn.Module) 
 This class defines the architecture of the neural network, including the dimensions of the different layers and the activation function employed in each layer. <br>
 
 ### 4. Create_model(architecture, activation_function) 
-This function creates a neural network using the NeuralNet class. You can specify the architecture (the number of hidden layers and their dimensions) and the activation function. Simply pass an array representing the layer dimensions (starting from the input layer to the output) and your chosen activation function as arguments to this function. <br>\
+This function creates a neural network using the NeuralNet class. You can specify the architecture (the number of hidden layers and their dimensions) and the activation function. Simply pass an array representing the layer dimensions (starting from the input layer to the output) and your chosen activation function as arguments to this function. <br>
+Example: The neural network has 10 inputs, 2 hidden layers of 6 and 3 neurons respectively, and 1 output. The activation function is ReLU.
+<pre> model = create_model([10,6,3,1] ,nn.ReLU()) </pre> <br>
 
 ### 5. Train_model(train_input, train_output, optimizer_type, model, epochs, learning_rate) 
 This function trains the model. It requires the training input and output obtained from the splitting function as arguments. Additionally, you must provide the optimizer type, the model (created using the create_model function), the number of epochs, and the learning rate. <br>
