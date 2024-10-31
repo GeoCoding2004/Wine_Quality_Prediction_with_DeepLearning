@@ -32,7 +32,7 @@ This class defines the architecture of the neural network, including the dimensi
 ### 4. Create_model(architecture, activation_function) 
 This function creates a neural network using the NeuralNet class. You can specify the architecture (the number of hidden layers and their dimensions) and the activation function. Simply pass an array representing the layer dimensions (starting from the input layer to the output) and your chosen activation function as arguments to this function. <br>
 Example: The neural network has 10 inputs, 2 hidden layers of 6 and 3 neurons respectively, and 1 output. The activation function is ReLU.
-<pre> model = create_model([10,6,3,1] ,nn.ReLU()) </pre> <br>
+<pre> model = create_model([10,6,3,1] ,nn.ReLU()) (To use nn: import torch.nn as nn) </pre>  <br>
 
 ### 5. Train_model(train_input, train_output, optimizer_type, model, epochs, learning_rate) 
 This function trains the model. It requires the training input and output obtained from the splitting function as arguments. Additionally, you must provide the optimizer type, the model (created using the create_model function), the number of epochs, and the learning rate. <br>
