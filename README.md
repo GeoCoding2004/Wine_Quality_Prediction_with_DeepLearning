@@ -10,7 +10,7 @@ The model employed is a feed-forward fully connected neural network. <br>
 First, the data is read from the CSV file and then converted into tensors. This allows a user to utilize the data directly without needing to split it. <br>
 The data is subsequently divided into a training set and a testing set. <br>
 The model is then trained using the training set, which consists of labeled data that enables the model to learn. <br>
-Finally, the model is evaluated with the testing set. <br>
+Finally, the model is evaluated using the testing set. <br>
 <br>
 
 # How to Use the Code 
