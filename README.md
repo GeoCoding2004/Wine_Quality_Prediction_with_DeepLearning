@@ -40,7 +40,7 @@ Example: Training the model using stochastic gradient descent, 1000 epochs, and 
 <pre> train_model(input_training, output_training, optim.SGD, model, 1000, 0.001) </pre> <br>
 
 ### 6. Test_loss(model, input_testing, output_testing, criterion) 
-This function calculates the error on the test data to check if the model prediction is accurate or not. To use this function, you need to pass your model along with the test input and test output data as well as the criterion. The function will return the calculated loss.
+This function calculates the error on the test data to check if the model prediction is accurate or not. To use this function, you need to pass your model along with the test input and test output data as well as the criterion. The function will return the calculated loss. <br>
 Example: Testing the model and getting the 'testloss'
 <pre> testloss = Test_loss(model,input_testing,output_testing,nn.MSELoss()) </pre> <br>
 
